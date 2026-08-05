@@ -46,7 +46,7 @@ def test_label_show_lines():
 def test_ascii_char_set():
     out = (
         Report.build(ReportKind.Error, (0, 0))
-        .with_config(Config().with_color(False).with_char_set(__import__("ariadne").Characters.ascii()))
+        .with_config(Config().with_color(False).with_char_set(__import__("ariadne_py").Characters.ascii()))
         .with_message("ascii")
         .with_label(Label((0, 5)).with_message("msg"))
         .finish()
@@ -61,7 +61,7 @@ def test_ansi_off_strips_escapes():
         Report.build(ReportKind.Error, (0, 0))
         .with_config(
             Config()
-            .with_ansi_mode(__import__("ariadne").AnsiMode.OFF)
+            .with_ansi_mode(__import__("ariadne_py").AnsiMode.OFF)
         )
         .with_message("no ansi")
         .finish()
@@ -107,3 +107,4 @@ def test_basic_style():
         .write_to_string(Source(""))
     )
     assert out.startswith("\x1b[31mError\x1b[0m: x")
+
