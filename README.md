@@ -7,6 +7,12 @@ The public API and rendered output mirror the Rust
 crate: `use ariadne::{...}` becomes `from ariadne_py import ...`, spans like
 `0..5` become `(0, 5)` tuples, and `Label::new(...)` becomes `Label(...)`.
 
+## Install
+
+```shell
+pip3 install git+https://github.com/starwindv/ariadne-py
+```
+
 ## Example
 
 ```python
