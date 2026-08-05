@@ -32,7 +32,7 @@ def test_simple_example():
         .finish()
         .write_to_string(Source(sample))
     )
-    assert out.replace("\n", "\r\n") == raw("simple.out")
+    assert out.replace("\r\n", "\n") == raw("simple.out").replace("\r\n", "\n")
 
 
 def test_labels_example():
@@ -56,7 +56,7 @@ def test_labels_example():
         .finish()
         .write_to_string(Source("a b c d e f"))
     )
-    assert out.replace("\n", "\r\n") == raw("labels.out")
+    assert out.replace("\r\n", "\n") == raw("labels.out").replace("\r\n", "\n")
 
 
 def test_multifile_example():
@@ -96,7 +96,7 @@ def test_multifile_example():
             sources({"a.tao": raw("a.tao"), "b.tao": raw("b.tao")})
         )
     )
-    assert out.replace("\n", "\r\n") == raw("multifile.out")
+    assert out.replace("\r\n", "\n") == raw("multifile.out").replace("\r\n", "\n")
 
 
 def test_multiline_example():
@@ -137,7 +137,7 @@ def test_multiline_example():
         .finish()
         .write_to_string(("sample.tao", Source(sample)))
     )
-    assert out.replace("\n", "\r\n") == raw("multiline.out")
+    assert out.replace("\r\n", "\n") == raw("multiline.out").replace("\r\n", "\n")
 
 
 def test_stresstest_example():
@@ -208,4 +208,4 @@ def test_stresstest_example():
     out = builder.finish().write_to_string(
         ("stresstest.tao", Source(raw("stresstest.tao")))
     )
-    assert out.replace("\n", "\r\n") == raw("stresstest.out")
+    assert out.replace("\r\n", "\n") == raw("stresstest.out").replace("\r\n",  "\n")
