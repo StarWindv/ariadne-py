@@ -1,7 +1,9 @@
 # ariadne-py
 
-A Python port of the [`ariadne`](https://crates.io/crates/ariadne) 0.7.0 fancy
-compiler-diagnostics crate. The public API and rendered output mirror the Rust
+An Unofficial Python port of the [`ariadne`](https://crates.io/crates/ariadne) fancy
+compiler-diagnostics crate. 
+
+The public API and rendered output mirror the Rust
 crate: `use ariadne::{...}` becomes `from ariadne_py import ...`, spans like
 `0..5` become `(0, 5)` tuples, and `Label::new(...)` becomes `Label(...)`.
 
@@ -61,3 +63,6 @@ The test suite is byte-for-byte compatible with the Rust crate:
 python -m pytest tests
 ```
 
+## License
+
+MIT / Apache2.0

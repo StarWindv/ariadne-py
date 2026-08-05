@@ -5,9 +5,9 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "ariadne_py"
 version = "0.7.0"
-description = "A fancy diagnostics & reporting library (Python port of the ariadne 0.7.0 Rust crate)"
+description = "A fancy diagnostics & reporting library (Unofficial Python port of the ariadne 0.7.0 Rust crate)"
 readme = "README.md"
-license = { text = "MIT" }
+license = { text = "Apache2.0" }
 requires-python = ">=3.10"
 keywords = ["error", "diagnostics", "report", "pretty", "compiler"]
 classifiers = [
