@@ -2,7 +2,7 @@
 
 import pytest
 
-from ariadne import Line, Location, Source
+from ariadne_py import Line, Location, Source
 
 
 def check_lines(lines):

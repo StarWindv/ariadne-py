@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ariadne"
+name = "ariadne_py"
 version = "0.7.0"
 description = "A fancy diagnostics & reporting library (Python port of the ariadne 0.7.0 Rust crate)"
 readme = "README.md"

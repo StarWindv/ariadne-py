@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from ariadne import (
+from ariadne_py import (
     Color,
     ColorGenerator,
     Config,

@@ -11,7 +11,7 @@ from pathlib import Path
 
 import pytest
 
-from ariadne import (
+from ariadne_py import (
     Config,
     FnCache,
     IndexType,

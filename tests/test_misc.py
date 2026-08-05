@@ -2,7 +2,7 @@
 
 import pytest
 
-from ariadne import (
+from ariadne_py import (
     Color,
     ColorGenerator,
     Config,
@@ -98,7 +98,7 @@ def test_custom_report_kind():
 
 
 def test_basic_style():
-    from ariadne import BasicStyle
+    from ariadne_py import BasicStyle
 
     out = (
         Report.build(BasicStyle("Error", Color.Red), (0, 0))

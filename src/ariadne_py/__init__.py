@@ -3,7 +3,7 @@ fancy diagnostics crate.
 
 The public API mirrors the Rust crate:
 
-    from ariadne import Label, Report, ReportKind, Source
+    from ariadne_py import Label, Report, ReportKind, Source
 
     Report.build(ReportKind.Error, (34, 34)) \
         .with_message("Incompatible types") \
